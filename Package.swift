@@ -6,16 +6,11 @@ let package = Package(
     platforms: [
         .iOS(.v17)
     ],
-    products: [
-        .executable(
-            name: "BirdMaster",
-            targets: ["BirdMaster"]
-        )
-    ],
     targets: [
-        .executableTarget(
-            name: "BirdMaster",
-            path: "BirdMaster"
+        .testTarget(
+            name: "BirdMasterSmokeTests",
+            dependencies: [],
+            path: "Tests/BirdMasterSmokeTests"
         )
     ]
 )
